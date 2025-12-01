@@ -1,5 +1,20 @@
 #include "libft.h"
 
+static int	ft_intlen(long nb)
+{
+	int	len;
+
+	len = 0;
+	if (nb <= 0)
+		len = 1;
+	while (nb != 0)
+	{
+		nb /= 10;
+		len++;
+	}
+	return (len);
+}
+
 char	*ft_itoa(int n)
 {
 	long	nb;
@@ -7,13 +22,8 @@ char	*ft_itoa(int n)
 	char	*str;
 
 	nb = n;
-	len = (n <= 0);
-	while (n)
-	{
-		n /= 10;
-		len++;
-	}
-	str = malloc(len + 1);
+	len = ft_intlen(nb);
+	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
 	str[len] = '\0';

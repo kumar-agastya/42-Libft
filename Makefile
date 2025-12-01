@@ -18,7 +18,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c libft.h
+%.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
@@ -28,5 +28,7 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+bonus: all
 
 .PHONY: all clean fclean re
