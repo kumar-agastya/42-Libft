@@ -1,9 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkumar <kkumar@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/01 02:58:12 by kkumar            #+#    #+#             */
+/*   Updated: 2025/12/01 03:01:28 by kkumar           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
 
 # include <stddef.h>   // size_t, NULL
 # include <stdlib.h>   // malloc, free
 # include <unistd.h>   // write
+# include <stdint.h>   // SIZE_MAX
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

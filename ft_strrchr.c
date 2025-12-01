@@ -1,20 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kkumar <kkumar@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/01 02:57:45 by kkumar            #+#    #+#             */
+/*   Updated: 2025/12/01 02:57:46 by kkumar           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-// char	*ft_strrchr(const char *s, int c)
-// {
-// 	const char	*last;
-
-// 	last = NULL;
-// 	while (1)
-// 	{
-// 		if (*s == (char)c)
-// 			last = s;
-// 		if (*s == '\0')
-// 			break ;
-// 		s++;
-// 	}
-// 	return ((char *)last);
-// }
 char	*ft_strrchr(const char *str, int c)
 {
 	char			*p;
